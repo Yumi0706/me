@@ -1,0 +1,103 @@
+/* Universal styling for body with black background */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Pure black background */
+    color: #ffffff; /* White text for readability */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header styling with black background and glowing bolder lilac text */
+header {
+    background-color: #000000; /* Black background */
+    color: #d88eff; /* Bolder lilac text */
+    text-align: center; /* Center align header text */
+    padding: 20px;
+    border-bottom: 2px solid #d88eff; /* Bottom border for header */
+    box-shadow: 0 0 15px rgba(216, 142, 255, 0.75); /* Soft glowing bolder lilac edges */
+    animation: slideDown 1s ease-in-out;
+}
+
+/* Navigation styling with flexbox */
+nav {
+    margin: 20px 0;
+}
+
+/* Unordered list styling for navigation links */
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center navigation links */
+    flex-wrap: wrap; /* Allows wrapping when space is limited */
+    gap: 15px; /* Adds space between each link */
+}
+
+/* Mellow buttons with glowing bolder lilac edges */
+nav a {
+    text-decoration: none;
+    color: #000000; /* Black text inside button */
+    padding: 15px 20px; /* Increased padding for buttons */
+    margin: 10px 0; /* Add vertical spacing between buttons */
+    border-radius: 25px;
+    background-color: #d88eff; /* Bolder lilac background */
+    box-shadow: 0 0 15px rgba(216, 142, 255, 0.75), 0 0 25px rgba(216, 142, 255, 0.5); /* Glowing effect */
+    transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease; /* Smoother transition */
+    white-space: nowrap; /* Prevents text from breaking into multiple lines */
+}
+
+/* Hover effect for buttons with increased glow */
+nav a:hover {
+    background-color: #c77ce7; /* Slightly darker bolder lilac on hover */
+    color: #000000; /* Keep text black */
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(216, 142, 255, 0.9), 0 0 30px rgba(216, 142, 255, 0.6); /* Stronger glow on hover */
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    text-align: center; /* Center align main text */
+}
+
+/* Section styling for headers */
+h2 {
+    margin: 20px 0; /* Space above and below */
+}
+
+/* Footer styling with black background and glowing bolder lilac */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000; /* Black background */
+    color: #d88eff; /* Bolder lilac text */
+    border-top: 2px solid #d88eff; /* Top border for footer */
+    box-shadow: 0 0 15px rgba(216, 142, 255, 0.75); /* Soft glowing bolder lilac edges */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+    animation: fadeIn 1s ease-in-out; /* Fade-in effect for footer */
+}
+
+/* Soft animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
