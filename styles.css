@@ -17,6 +17,8 @@ header {
     border-bottom: 2px solid #d88eff; /* Bottom border for header */
     box-shadow: 0 0 15px rgba(216, 142, 255, 0.75); /* Soft glowing bolder lilac edges */
     animation: slideDown 1s ease-in-out;
+    position: relative; /* Ensure proper stacking */
+    z-index: 100; /* Elevate header over other elements */
 }
 
 /* Navigation styling with flexbox */
@@ -59,11 +61,14 @@ nav a:hover {
 main {
     padding: 20px;
     text-align: center; /* Center align main text */
+    color: #ffffff; /* Ensure main content text is white for contrast */
 }
 
 /* Section styling for headers */
 h2 {
     margin: 20px 0; /* Space above and below */
+    color: #d88eff; /* Bolder lilac color for section headers */
+    text-shadow: 0 0 10px rgba(216, 142, 255, 0.75); /* Soft glowing effect on headers */
 }
 
 /* Footer styling with black background and glowing bolder lilac */
@@ -79,6 +84,7 @@ footer {
     width: 100%;
     margin-top: 40px;
     animation: fadeIn 1s ease-in-out; /* Fade-in effect for footer */
+    z-index: 100; /* Ensure footer is above other elements */
 }
 
 /* Soft animation keyframes */
@@ -99,5 +105,24 @@ footer {
     to {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+/* Ensure navigation bar wraps on smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+    }
+
+    nav a {
+        width: 100%; /* Full width buttons */
+        text-align: center;
+    }
+}
+
+/* Adjust padding for main content on smaller screens */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
     }
 }
