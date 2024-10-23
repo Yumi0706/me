@@ -1,58 +1,41 @@
-/* General styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: white;
-}
-
-main {
-    padding: 20px;
-}
-
-h2 {
-    color: #333;
-}
-
-/* Image and content styling */
-.content {
-    position: relative;
-}
-
-.profile-img {
-    width: 150px; /* Adjust to control size */
-    height: auto;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    border-radius: 50%; /* Optional: makes the image circular */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
-}
-
-/* Footer styling */
-footer {
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="education.html">Educational Background</a>
+                <a href="experience.html">Experience</a>
+                <a href="publications.html">Publications</a>
+                <a href="awards.html">Awards</a>
+                <a href="projects.html">Projects</a>
+                <a href="membership.html">Membership</a>
+                <a href="research.html">Research</a>
+                <a href="events.html">Events</a>
+                <a href="presentations.html">Presentations</a>
+                <a href="courses.html">Courses</a>
+                <a href="contact.html">Contact</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Pallabi Roy</h2>
+        <div class="content">
+            <p>Hello! I’m Pallabi Roy, an 18-year-old B.Tech student majoring in Computer Science Engineering with a specialization in Cyber Security at IEM Newtown, under UEM Kolkata. As an aspiring innovator, I’m passionate about blending creativity with technology to push boundaries and explore new possibilities. Let’s connect and collaborate—I’d love to share ideas and work together on exciting projects!</p>
+            <img src="me.jpg" alt="Pallabi Roy" class="profile-img">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pallabi Roy</p>
+    </footer>
+</body>
+</html>
