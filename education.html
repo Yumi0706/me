@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educational Background</title>
     <link rel="stylesheet" href="styles.css"> 
+    <style>
+        .education-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .education-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            width: 45%;
+            position: relative;
+        }
+        .education-box img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Makes the image circular */
+            box-shadow: 0 0 15px 5px rgba(200, 162, 255, 0.7); /* Lilac glow */
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -29,18 +51,19 @@
     </header>
     <main>
         <h2>Education Details</h2>
+        <div class="education-container">
+            <section class="education-box">
+                <img src="kv logo.png" alt="Kendriya Vidyalaya Logo">
+                <p>I, Pallabi Roy, successfully completed my school education from Kendriya Vidyalaya Asansol.</p>
+                <p>Cleared my CBSE Class 10 exam from KVS with 85%.</p>
+                <p>Cleared my CBSE Class 12 exam from KVS with 69.6%.</p>
+            </section>
 
-        <section class="education-box">
-            <img src="kv_logo.png" alt="Kendriya Vidyalaya Logo" style="width:100px; height:auto;">
-            <p>I, Pallabi Roy, successfully completed my school education from Kendriya Vidyalaya Asansol.</p>
-            <p>Cleared my CBSE Class 10 exam from KVS with 85%.</p>
-            <p>Cleared my CBSE Class 12 exam from KVS with 69.6%.</p>
-        </section>
-
-        <section class="education-box">
-            <img src="uem_logo.png" alt="UEM Logo" style="width:100px; height:auto;">
-            <p>Currently pursuing my B. Tech. in CSE (Cyber Security) from University Of Engineering And Management, Kolkata.</p>
-        </section>
+            <section class="education-box">
+                <img src="UEM LOGO.png" alt="UEM Logo">
+                <p>Currently pursuing my B. Tech. in CSE (Cyber Security) from University Of Engineering And Management, Kolkata.</p>
+            </section>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 Pallabi Roy</p>
