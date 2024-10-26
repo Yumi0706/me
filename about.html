@@ -5,34 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for circular image and glow effect */
+        .profile-img-container {
+            display: inline-block;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 150px; /* Adjust the size as needed */
+            height: 150px; /* Adjust the size as needed */
+            box-shadow: 0 0 20px rgba(200, 162, 255, 0.7); /* Lilac glow */
+            margin-bottom: 20px; /* Space below the image */
+        }
+
+        .profile-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover; /* Cover to focus on the face */
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>About Me</h1>
         <nav>
             <ul>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Me</a>
-                <a href="education.html">Educational Background</a>
-                <a href="experience.html">Experience</a>
-                <a href="publications.html">Publications</a>
-                <a href="awards.html">Awards</a>
-                <a href="projects.html">Projects</a>
-                <a href="membership.html">Membership</a>
-                <a href="research.html">Research</a>
-                <a href="events.html">Events</a>
-                <a href="presentations.html">Presentations</a>
-                <a href="courses.html">Courses</a>
-                <a href="contact.html">Contact</a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="education.html">Educational Background</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="presentations.html">Presentations</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h2>Pallabi Roy</h2>
-        <img src="me.jpg" alt="Pallabi Roy" class="profile-img" style="object-fit:contain;
-            width:200px;
-            height:auto;
-            border: solid 1px #CCC">
+        <div class="profile-img-container">
+            <img src="me.jpg" alt="Pallabi Roy" class="profile-img">
+        </div>
         <div class="content">
             <p>Hello! I’m Pallabi Roy, an 18-year-old B.Tech student majoring in Computer Science Engineering with a specialization in Cyber Security at IEM Newtown, under UEM Kolkata. As an aspiring innovator, I’m passionate about blending creativity with technology to push boundaries and explore new possibilities. Let’s connect and collaborate—I’d love to share ideas and work together on exciting projects!</p>
         </div>
