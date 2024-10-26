@@ -11,16 +11,17 @@
             display: inline-block;
             border-radius: 50%;
             overflow: hidden;
-            width: 150px; /* Adjust the size as needed */
-            height: 150px; /* Adjust the size as needed */
-            box-shadow: 0 0 20px rgba(200, 162, 255, 0.7); /* Lilac glow */
+            width: 180px; /* Increased size for more collarbone visibility */
+            height: 180px; /* Increased size for more collarbone visibility */
+            box-shadow: 0 0 30px rgba(200, 162, 255, 1); /* Brighter lilac glow */
             margin-bottom: 20px; /* Space below the image */
         }
 
         .profile-img {
             width: 100%;
             height: auto;
-            object-fit: cover; /* Cover to focus on the face */
+            object-fit: cover; /* Cover to focus on the face and collarbone */
+            transform: translateY(-10%); /* Adjust position to show collarbone */
         }
     </style>
 </head>
@@ -59,3 +60,4 @@
     </footer>
 </body>
 </html>
+
